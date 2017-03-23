@@ -1,0 +1,29 @@
+{
+  "name": "rasset",
+  "version": "1.0.0",
+  "description": "web service that send a number of random assets to clients. ",
+  "main": "rasset.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somebrel/rasset.git"
+  },
+  "keywords": [
+    "web",
+    "service",
+    "random",
+    "asset",
+    "ressource"
+  ],
+  "author": "Brahian E. Soto Mercedes <brahian@somebrel.com> (http://somebrel.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/somebrel/rasset/issues"
+  },
+  "homepage": "https://github.com/somebrel/rasset#readme",
+  "dependencies": {
+    "restify": "4.3.0"
+  }
+}
