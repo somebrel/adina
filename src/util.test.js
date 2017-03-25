@@ -1,7 +1,14 @@
 import { arraysIdentic, removeFromArray, pickRandomFromArray } from "./util";
 
 test("Test if two arrays are identic", () => {
+  let arr1 = [1, 2, 3, 4];
+  let arr2 = arr1;
+
+  expect(arraysIdentic(arr1, arr2)).toBe(true);
   expect(arraysIdentic([1, 2, 3, 4], [1, 2, 3, 4])).toBe(true);
+  expect(arraysIdentic([1, 3, 2, 4], [1, 2, 3, 4])).toBe(false);
+  expect(arraysIdentic([1, 3, 2, 4])).toBe(false);
+  expect(arraysIdentic()).toBe(false);
 });
 
 test("Removes one element from an array in a 'functional' way", () => {
