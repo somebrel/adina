@@ -8,8 +8,8 @@ export function removeFromArray(arr, element) {
 }
 
 export function arraysIdentic(arr1, arr2) {
-  if (arr1 === arr2) return true;
   if (arr1 == null || arr2 == null) return false;
+  if (arr1 === arr2) return true;
   if (arr1.length != arr2.length) return false;
 
   for (var i = 0; i < arr1.length; ++i) {
