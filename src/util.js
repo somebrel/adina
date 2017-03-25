@@ -1,10 +1,17 @@
 export function removeFromArray(arr, element) {
+  if (arr == null || element == null) {
+    console.error("Error: Expects an array AND an element to be removed.");
+    return null;
+  }
+
   let elIndex = arr.indexOf(element);
+  if (elIndex < 0) return arr;
 
   let arr1 = arr.slice(0, elIndex);
   let arr2 = arr.slice(elIndex + 1, arr.length);
+  let resultArr = arr1.concat(arr2);
 
-  return arr1.concat(arr2);
+  return resultArr;
 }
 
 export function arraysIdentic(arr1, arr2) {
