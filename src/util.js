@@ -1,5 +1,5 @@
 const util = {
-  removeFromArray: function(arr, element) {
+  removeFromArray(arr, element) {
     let elIndex = arr.indexOf(element);
 
     let arr1 = arr.slice(0, elIndex);
@@ -8,7 +8,7 @@ const util = {
     return arr1.concat(arr2);
   },
 
-  arraysIdentic: function(arr1, arr2) {
+  arraysIdentic(arr1, arr2) {
     if (arr1 === arr2) return true;
     if (arr1 == null || arr2 == null) return false;
     if (arr1.length != arr2.length) return false;
@@ -19,7 +19,7 @@ const util = {
     return true;
   },
 
-  pickRandomFromArray: function(arr = [], n = 0) {
+  pickRandomFromArray(arr = [], n = 0) {
     if (n === 0) return [];
     if (arr.length === 0) {
       console.error("Error: Empty array.");
