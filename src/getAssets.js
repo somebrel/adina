@@ -1,18 +1,16 @@
-const fs = require("fs");
+import fs from "fs";
+import { pickRandomFromArray } from "./util.js";
 
-function getAssets(number, dir) {
-  const queue = [];
-  const files = fs.readdirSync(dir);
+export default function(number, path = "assets") {
+  if (number == null || path == null) return null;
 
-  while (queue.length < number) {
-  }
+  const files = [];
+  const filesName = fs.readdirSync(path);
+  const randomFilesName = pickRandomFromArray(filesName, number);
 
-  for (let i = 0; i < number; i++) {
-    let name = dir + "/" + files[i];
-    queue.push(name);
-  }
+  randomFilesName.forEach(fileName => {
+    files.push(fs.readFileSync(`${path}/${fileName}`, "utf8"));
+  });
 
-  return queue;
+  return files;
 }
-
-module.exports = getAssets;
