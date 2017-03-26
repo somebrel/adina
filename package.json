@@ -5,6 +5,7 @@
   "main": "rasset.js",
   "scripts": {
     "test": "jest",
+    "test-watch": "jest --watchAll",
     "prebuild": "rimraf lib",
     "build": "babel --out-dir lib --ignore *.test.js src",
     "start": "node rasset.js"
