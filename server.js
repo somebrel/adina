@@ -5,7 +5,10 @@ const server = restify.createServer({ name: "adina" });
 server.pre(restify.pre.userAgentConnection());
 server.use(restify.queryParser({ mapParams: false }));
 
-const config = { server: { port: 8080 }, assets: { path: "ostia", number: 1 } };
+const config = {
+  server: { port: 8080 },
+  assets: { path: "assets", number: 1 }
+};
 
 function sendAssetsQueue(req, res, next) {
   const assetsNumber = req.params.number
