@@ -1,22 +1,24 @@
 {
-  "name": "rasset",
+  "name": "adina",
   "version": "1.0.0",
   "description": "web service that send a number of random assets to clients. ",
-  "main": "rasset.js",
+  "main": "lib/adina.js",
   "scripts": {
     "test": "jest",
     "test-watch": "jest --watchAll",
     "prebuild": "rimraf lib",
     "build": "babel --out-dir lib --ignore *.test.js src",
-    "start": "node rasset.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/somebrel/rasset.git"
+    "url": "git+https://github.com/somebrel/adina.git"
   },
   "keywords": [
     "web",
     "service",
+    "rest",
+    "api"
     "random",
     "asset",
     "ressource"
@@ -24,9 +26,9 @@
   "author": "Brahian E. Soto Mercedes <brahian@somebrel.com> (http://somebrel.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/somebrel/rasset/issues"
+    "url": "https://github.com/somebrel/adina/issues"
   },
-  "homepage": "https://github.com/somebrel/rasset#readme",
+  "homepage": "https://github.com/somebrel/adina#readme",
   "dependencies": {
     "restify": "4.3.0"
   },

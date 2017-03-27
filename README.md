@@ -1,2 +1,2 @@
-# rasset
-web service that send a number of random assets to clients.
+# adina
+REST API Server for requesting assets from a directory.
