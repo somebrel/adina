@@ -1,5 +1,5 @@
 import fs from "fs";
-import { pickRandomFromArray } from "./util.js";
+import { pickRandomFromArray } from "./utils.js";
 
 export default function(number, path = "assets") {
   if (number == null || path == null) return null;

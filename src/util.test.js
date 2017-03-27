@@ -1,4 +1,4 @@
-import { arraysIdentic, removeFromArray, pickRandomFromArray } from "./util";
+import { arraysIdentic, removeFromArray, pickRandomFromArray } from "./utils";
 
 test("Test if two arrays are identic", () => {
   let arr1 = [1, 2, 3, 4];
