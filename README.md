@@ -1,8 +1,9 @@
-# adina
----
+adina
+===
 [adina](https://github.com/somebrel/adina) is a RESTful server that allows clients to request assets from a directory located in the server's filesystem.
 
-## Example
+Example
+---
 ```bash
 curl http://localhost:8080/get/3?from=/home/alice
 ```
@@ -13,27 +14,25 @@ Assuming that adina is installed, running on `localhost:8080` and you have some 
 ["content of the a file", "another file content", "file with some content"]
 ```
 
-## About
+About
 ---
 This project was born as a part of a bigger project I had to do for the universtity. The name comes from *__a__ssets* and  *Diener* (German for servant, pronounced __di__i__na__).
 
-## Instalation
+Instalation
 ---
-### Recomended
+**Recomended**
 ```bash
 npm install --global adina
 ```
 
-### As a node module
+**As a node module**
 ```bash
 npm install adiner
 ```
 
 Depending on your needs use the flags `--save` or `--save-dev`.
 
-### Manual Instalation
-If for whatever reason you wish to build [adina](https://github.com/somebrel/adina) yourself, goe ahead and
-
+**Manual Instalation**
 ```bash
 git clone https://github.com/somebrel/adina.git
 ```
@@ -50,22 +49,22 @@ npm install
 npm run build
 ```
 
-## Usage
+Usage
 ---
 
 
-## Tests
+Tests
 ---
 There are Unit Tests available written using [Jest](https://facebook.github.io/jest/) as test engine. They can be run with
 ```
 npm test
 ```
 
-## Contributors
+Contributors
 ---
 For reporting bugs, asking questions or giving suggestions, please [create an issue](https://github.com/somebrel/adina/issues)
 
-## License
+License
 ---
 MIT License
 
