@@ -7,16 +7,14 @@ server.use(restify.queryParser({ mapParams: false }));
 
 const config = {
   server: { port: 8080 },
-  assets: { path: "assets", number: 1 }
+  assets: { path: "./assets/bin", number: 1 }
 };
 
 function sendAssetsQueue(req, res, next) {
   const assetsNumber = req.params.number
     ? req.params.number
     : config.assets.number;
-  const assetsDir = req.query.from
-    ? "./" + req.query.from
-    : "./" + config.assets.dir;
+  const assetsDir = req.query.from ? req.query.from : config.assets.dir;
 
   const queue = getAssets(assetsNumber, assetsDir);
   res.send(queue);
