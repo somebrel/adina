@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "web service that send a number of random assets to clients. ",
   "main": "lib/adina.js",
+  "files": [
+    "server.js", "lib/"
+  ],
   "scripts": {
     "test": "jest",
     "test-watch": "jest --watchAll",
