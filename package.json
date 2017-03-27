@@ -1,10 +1,12 @@
 {
   "name": "adina",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "web service that send a number of random assets to clients. ",
   "main": "lib/adina.js",
   "files": [
-    "server.js"
+    "server.js",
+    "lib/",
+    "bin/"
   ],
   "directories":  {
     "lib": "./lib"
