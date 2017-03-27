@@ -1,11 +1,15 @@
 {
   "name": "adina",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "web service that send a number of random assets to clients. ",
   "main": "lib/adina.js",
   "files": [
-    "server.js", "lib/"
+    "server.js"
   ],
+  "directories":  {
+    "lib": "./lib"
+  },
+  "bin": "./bin/adina",
   "scripts": {
     "test": "jest",
     "test-watch": "jest --watchAll",
