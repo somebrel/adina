@@ -1,5 +1,5 @@
 const restify = require("restify");
-const getAssets = require("./lib/getAssets").default;
+const getAssets = require("./lib/adina").getAssets;
 
 const server = restify.createServer({ name: "rasset" });
 server.pre(restify.pre.userAgentConnection());
