@@ -1,7 +1,7 @@
 {
   "name": "adina",
   "version": "1.0.6",
-  "description": "web service that send a number of random assets to clients. ",
+  "description": " A RESTful server that allows clients to request assets from a directory located in the server's filesystem.",
   "main": "lib/adina.js",
   "files": [
     "server.js",
