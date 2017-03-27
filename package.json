@@ -1,6 +1,6 @@
 {
   "name": "adina",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "web service that send a number of random assets to clients. ",
   "main": "lib/adina.js",
   "files": [
