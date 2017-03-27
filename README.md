@@ -16,7 +16,7 @@ Assuming that adina is installed, running on `localhost:8080` and you have some 
 
 About
 ---
-This project was born as a part of a bigger project I had to do for the universtity. The name comes from *__a__ssets* and  *Diener* (German for servant, pronounced __di__i__na__).
+This project was born as a part of a bigger project I had to do for the universtity. The name comes from *assets* and  *Diener* (pronounced diina, is German for servant).
 
 Instalation
 ---
@@ -27,10 +27,8 @@ npm install --global adina
 
 **As a node module**
 ```bash
-npm install adiner
+npm install --save adiner
 ```
-
-Depending on your needs use the flags `--save` or `--save-dev`.
 
 **Manual Instalation**
 ```bash
