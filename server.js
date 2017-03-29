@@ -15,11 +15,11 @@ function sendAssetsQueue(req, res, next) {
     ? req.params.number
     : config.assets.number;
   const assetsDir = req.query.from ? req.query.from : config.assets.dir;
-
-  const queue = getAssets(assetsNumber, assetsDir);
+  const mod = req.query.mod ? req.query.mod : null;
+  const queue = getAssets(assetsNumber, assetsDir, mod);
   res.send(queue);
 }
-// example localhost:8080/get/7?from=assets
+// example 'localhost:8080/get/7?from=assets&mod=/home/brahian/Projects/adina/modifiers/appendHappyFace'
 server.get("/get/:number", sendAssetsQueue);
 
 server.listen(config.server.port, "localhost", function() {
