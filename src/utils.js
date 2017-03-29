@@ -1,3 +1,7 @@
+export function isFunction(x) {
+  return Object.prototype.toString.call(x) == "[object Function]";
+}
+
 export function removeFromArray(arr, element) {
   if (arr == null || element == null) {
     console.error("Error: Expects an array AND an element to be removed.");
